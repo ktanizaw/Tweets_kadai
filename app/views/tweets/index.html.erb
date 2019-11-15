@@ -1,0 +1,33 @@
+<h1 class="index-title">サッカーあるある一覧</h1>
+
+<p id="notice"><%= notice %></p>
+
+<section>
+  <table>
+    <tr>
+      <th>サッカーあるある</th>
+    </tr>
+
+<% @tweets.each do |tweet| %>
+    <tr>
+      <td><%= tweet.content %></td>
+      <td>
+      <button type="button" class="btn btn-primary btn-sm">
+        <%= link_to 'ピックアップ', tweet_path(tweet.id), :style=>"color:white;" %>
+      </button>
+      </td>
+      <td>
+      <button type="button" class="btn btn-success btn-sm">
+        <%= link_to "編集する", edit_tweet_path(tweet.id), data: { confirm: '本当に編集していいですか？' }, :style=>"color:white;" %>
+      </button>
+      </td>
+      <td>
+      <button type="button" class="btn btn-danger btn-sm">
+        <%= link_to '削除する', tweet_path(tweet.id), method: :delete, data: { confirm: '本当に削除していいですか？' }, :style=>"color:white;" %>
+      </button>
+      </td>
+    </tr>
+
+<% end %>
+  </table>
+</section>

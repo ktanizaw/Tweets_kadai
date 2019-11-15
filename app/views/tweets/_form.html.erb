@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_with(model: @tweet, local: true, url: choose_new_or_edit) do |form| %>
+  <% if @tweet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @tweet.errors.count %>件のエラーがあります。</h2>
+      <ul>
+
+      <% @tweet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="Tweet_content">
+
+    <div>
+      <%= form.label :あなたのサッカーあるあるは？ %>
+    </div>
+    <div>
+      <%= form.text_field :content %>
+    </div>
+  </div>
+  <div class="Tweet_submit">
+  <%= form.submit :あるある投稿！ %>
+  </div>
+<% end %>

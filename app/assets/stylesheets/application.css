@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require bootstrap/dist/css/bootstrap.min
+ *= require_tree .
+ *= require_self
+ */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 80px;
+  background-color: #b22222;
+  position: relative;
+}
+
+.header-logo {
+  float: left;
+  padding-left: 20px;
+}
+
+.header-text {
+  line-height: 80px;
+  padding-left: 40px;
+}
+
+.header_text {
+  color: white;
+  padding-left: 20px;
+  line-height: 70px;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-image: url('arsenal-2865370_1280.jpg');
+  opacity: 0.8;
+  position: relative;
+}
+
+.show-container {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+.top-logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-size: cover;
+  background-image: url('football-157931_640.png');
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.top-logo:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.1875em);
+}
+
+
+.top-logo p{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 28px;
+  color: red;
+  font-weight: bold;
+}
+
+.about {
+  text-align: center;
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.about h2{
+  color: red;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+.about p{
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: #b22222;
+  margin-top: auto;
+}
+
+.index-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+table{
+  width: 100%;
+  border-spacing: 0;
+  padding-top: 20px;
+}
+
+table th{
+  border-bottom: solid 2px #fb5144;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.show-content{
+  padding-top: 20px;
+}
+
+.show-text{
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 400px
+}
+
+#notice {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+.Tweet_content{
+  text-align: center;
+  font-size: 36px;
+  padding-top: 70px;
+}
+
+.Tweet_submit{
+  text-align: center;
+  font-size: 36px;
+  padding-top: 40px;
+}
+
+.confirm-content{
+  text-align: center;
+  font-size: 36px;
+  padding-top: 70px;
+}
